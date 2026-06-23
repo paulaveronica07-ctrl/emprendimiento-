@@ -12,4 +12,5 @@ Cuidadores Familiares: Buscan vigilar la salud de niños o adultos mayores media
 Audífonos Biométricos Adaptativos: Auriculares inalámbricos de uso diario que miden signos vitales directamente desde el oído, vinculados a una aplicación móvil inteligente que personaliza la información de salud según la edad y necesidades del usuario.
 
 ###  Integrantes del equipo
-Paula y Miguel 
+- Paula 
+- Miguel 
