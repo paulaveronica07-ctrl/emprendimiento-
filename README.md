@@ -9,7 +9,7 @@ Pacientes Crónicos: Necesitan un monitoreo médico continuo, discreto y en tiem
 Cuidadores Familiares: Buscan vigilar la salud de niños o adultos mayores mediante interfaces fáciles y alertas remotas.
 
 ###  Productos o servicios principales
--Audífonos Biométricos Adaptativos: Auriculares inalámbricos de uso diario que miden signos vitales directamente desde el oído, vinculados a una aplicación móvil inteligente que personaliza la información de salud según la edad y necesidades del usuario.
+Audífonos Biométricos Adaptativos: Auriculares inalámbricos de uso diario que miden signos vitales directamente desde el oído, vinculados a una aplicación móvil inteligente que personaliza la información de salud según la edad y necesidades del usuario.
 
 ###  Integrantes del equipo
 Paula y Miguel 
