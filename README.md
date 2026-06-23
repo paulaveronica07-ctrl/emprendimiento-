@@ -1,4 +1,4 @@
-#  Nombre del Negocio: BioSync
+#  BioSyncs
 
 ###  Problema que resuelve
 Mi emprendimiento soluciona la falta de un dispositivo de monitoreo de salud universal, cómodo y accesible, unificando el seguimiento médico preventivo y el rendimiento deportivo en un accesorio de uso diario como los audífonos. Al eliminar la incomodidad y complejidad de los relojes inteligentes tradicionales, este proyecto resuelve la exclusión tecnológica de niños y adultos mayores con problemas de salud, a la vez que optimiza el equipamiento de los atletas al integrar entretenimiento y métricas vitales en un solo producto adaptable a cualquier edad.
