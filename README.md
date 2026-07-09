@@ -9,7 +9,7 @@ El emprendimiento soluciona la falta de un dispositivo y de una app de monitoreo
 - Cuidadores Familiares: Buscan vigilar la salud de niños o adultos mayores mediante interfaces fáciles y alertas remotas.
 
 ###  Productos o servicios principales
-- Audífonos Biométricos Adaptativos: Dispositivos inalámbricos de uso diario diseñados para comunicar el estado físico y de salud de la persona, recibiendo datos y notificaciones sincronizadas con el telefono.
+- Audífonos Adaptativos: Dispositivos inalámbricos de uso diario diseñados para comunicar el estado físico y de salud de la persona, recibiendo datos y notificaciones sincronizadas con el telefono.
 - Aplicación BioSyncs: Plataforma centralizada instalada en el teléfono móvil que actúa exclusivamente como puente de configuración y enlace inicial para conectar los audífonos, permitiendo el funcionamiento autónomo de ambos dispositivos.
 
 
