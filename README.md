@@ -4,7 +4,7 @@
 El emprendimiento soluciona la falta de un dispositivo y de una app de monitoreo de salud universal, cómodo y accesible, unificando el seguimiento médico preventivo y el rendimiento deportivo en un accesorio de uso diario como los audífonos. Al eliminar la incomodidad y complejidad , este proyecto resuelve la exclusión tecnológica de niños y adultos mayores con problemas de salud, a la vez que optimiza el equipamiento de los atletas al integrar entrenamiento y métricas vitales en un solo producto adaptable a cualquier edad.
 
 ###  A quién va dirigido
-- Deportistas: Buscan registrar métricas de alto rendimiento y escuchar música sin usar relojes molestos.
+- Deportistas: Buscan registrar métricas de alto rendimiento.
 - Pacientes Crónicos: Necesitan un monitoreo médico continuo, discreto y en tiempo real para prevenir crisis.
 - Cuidadores Familiares: Buscan vigilar la salud de niños o adultos mayores mediante interfaces fáciles y alertas remotas.
 
