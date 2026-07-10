@@ -7,6 +7,7 @@ El emprendimiento soluciona la falta de un dispositivo y de una app de monitoreo
 - Deportistas: Buscan registrar métricas de alto rendimiento.
 - Pacientes Crónicos: Necesitan un monitoreo médico continuo, discreto y en tiempo real para prevenir crisis.
 - Cuidadores Familiares: Buscan vigilar la salud de niños o adultos mayores mediante interfaces fáciles y alertas remotas.
+- Niños con autismo: Aviso a los tutores de como se siente,aviso sensorial.
 
 ###  Productos o servicios principales
 - Audífonos Adaptativos: Dispositivos inalámbricos de uso diario diseñados para comunicar el estado físico y de salud de la persona, recibiendo datos y notificaciones sincronizadas con el telefono.
