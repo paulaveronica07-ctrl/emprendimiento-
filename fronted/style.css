@@ -263,3 +263,23 @@ header {
     padding: 20px 0;
     z-index: 1000;
 }
+.modal-medusa-img {
+    display: block;
+    margin: 0 auto 20px auto; /* Centrada, con margen abajo */
+    width: 80px; /* Tamaño pequeño y elegante */
+    height: auto;
+    filter: drop-shadow(0 0 15px #00b4ff); /* Brillo potente */
+    animation: flotar-modal 3s ease-in-out infinite; /* Animación suave dentro del modal */
+}
+
+
+@keyframes flotar-modal {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-10px) scale(1.05); }
+}
+
+
+.detalles-lista {
+    margin-top: 20px;
+    text-align: left; /* O 'center', según prefieras el texto */
+}

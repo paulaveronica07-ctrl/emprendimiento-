@@ -99,5 +99,57 @@ function mostrarDetalle(plan) {
     contenido.innerHTML = detalles;
     modal.style.display = 'block';
 }
-// Cambia la línea de detalles por esta:
+
 let detalles = `<div class="icono-plan">${icono}</div>`;
+function mostrarDetalle(plan) {
+    const modal = document.getElementById('modal-venta');
+    const titulo = document.getElementById('titulo-modal');
+    const contenido = document.getElementById('contenido-modal');
+
+
+    let tarjetaClickeada = null;
+    
+    const tarjetas = document.querySelectorAll('.plan-card');
+    tarjetas.forEach(tarjeta => {
+        // Si el texto h3 de la tarjeta coincide con el plan que nos mandaron, esa es
+        if (tarjeta.querySelector('h3').innerText === plan) {
+            tarjetaClickeada = tarjeta;
+        }
+    });
+
+   
+    let imagenSrc = "";
+    if (tarjetaClickeada) {
+        const imgElement = tarjetaClickeada.querySelector('.medusa-img');
+        if (imgElement) {
+            imagenSrc = imgElement.src; // Obtenemos el link de la imagen
+        }
+    }
+
+    
+    titulo.innerText = "Plan " + plan;
+    
+    
+    let detallesHTML = `
+        <img src="${imagenSrc}" class="modal-medusa-img" alt="${plan}">
+        <div class="detalles-lista">
+    `;
+
+    if (plan === 'Deportista') {
+        detallesHTML += "<ul><li>Monitoreo de rendimiento</li><li>Monitoreo de pasos</li><li>Registro de intensidad</li></ul>";
+    } else if (plan === 'Niños') {
+        detallesHTML += "<ul><li>Botón de llamada de emergencia</li><li>Mensajes directos con la familia</li><li>Nivel de batería en tiempo real</li></ul>";
+    } else if (plan === 'Adulto Mayor') {
+        detallesHTML += "<ul><li>Detección de caídas</li><li>Monitoreo de salud constante</li><li>Alertas a cuidadores</li></ul>";
+    } else if (plan === 'Familiar') {
+        detallesHTML += "<ul><li>Sincronización de todos los dispositivos</li><li>Control centralizado para el hogar</li><li>Protección grupal</li></ul>";
+    }
+    
+    detallesHTML += "</div>"; 
+
+    
+    contenido.innerHTML = detallesHTML;
+
+    
+    modal.style.display = 'block';
+}
