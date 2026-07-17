@@ -30,3 +30,35 @@ header, main, footer {
     padding: 20px;
     background: rgba(0, 0, 0, 0.2); /* Transparencia para ver el efecto detrás */
 }
+
+#dashboard {
+    padding: 40px 20px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px); /* El efecto de vidrio esmerilado */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Un pequeño movimiento al pasar el mouse */
+}
+
+.data {
+    font-size: 1.8em;
+    color: #00b4ff; /* Color cian para mantener la estética tecnológica */
+    font-weight: bold;
+    margin-top: 10px;
+}
