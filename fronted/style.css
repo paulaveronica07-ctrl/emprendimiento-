@@ -210,3 +210,56 @@ header, main, footer {
     animation: girar 10s linear infinite;
     font-size: 50px;
 }
+.plan-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Esto las vuelve círculos perfectos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 180, 255, 0.1);
+    border: 2px solid rgba(0, 180, 255, 0.5);
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+    /* La animación de medusa */
+    animation: flotar 6s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-20px) scale(1.05); } /* Efecto de pulsación */
+}
+.modal-content {
+    background: rgba(10, 10, 10, 0.95); /* Fondo casi transparente */
+    border-radius: 50px; /* Bordes muy redondeados */
+    border: 2px solid #00b4ff;
+    box-shadow: 0 0 30px #00b4ff;
+    backdrop-filter: blur(20px); /* Efecto vidrio esmerilado */
+    text-align: center;
+}
+
+.boton-comprar {
+    background: linear-gradient(45deg, #00b4ff, #ff00ff);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-comprar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffffff;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    z-index: 1000;
+}
