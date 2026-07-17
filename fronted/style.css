@@ -62,3 +62,42 @@ header, main, footer {
     font-weight: bold;
     margin-top: 10px;
 }
+.titulo-futurista {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #00b4ff;
+    text-shadow: 0 0 10px #00b4ff;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.planes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.plan-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00b4ff;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.plan-card:hover {
+    background: rgba(0, 180, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 180, 255, 0.5);
+    transform: translateY(-10px);
+}
+
+.plan-card.especial {
+    border: 2px solid #ff00ff;
+}
+
+.plan-card.especial:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
