@@ -1,0 +1,32 @@
+/* Limpieza básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo oscuro tecnológico */
+body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+/* El lienzo del efecto se fija al fondo */
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Esto es vital: lo pone detrás de tu texto */
+}
+
+/* Ajuste para que tu contenido sea legible sobre el efecto */
+header, main, footer {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2); /* Transparencia para ver el efecto detrás */
+}
