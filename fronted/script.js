@@ -49,7 +49,7 @@ function mostrarDetalle(plan) {
     if (plan === 'Deportista') {
         detalles = "<ul><li>Monitoreo de rendimiento</li><li>Monitoreo de pasos</li><li>Registro de intensidad de entrenamiento</li></ul>";
     } else if (plan === 'Niños') {
-        detalles = "<ul><li>Botón de llamada de emergencia</li><li>Mensajes directos con la familia</li><li>Nivel de batería en tiempo real</li><li>Juegos educativos integrados</li></ul>";
+        detalles = "<ul><li>Botón de llamada de emergencia</li><li>Mensajes directos con la familia</li><li>Nivel de batería en tiempo real</li></ul>";
     } else if (plan === 'Adulto Mayor') {
         detalles = "<ul><li>Detección de caídas</li><li>Monitoreo de salud constante</li><li>Alertas a cuidadores</li></ul>";
     } else if (plan === 'Familiar') {
@@ -69,4 +69,33 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = 'none';
     }
+}
+function mostrarDetalle(plan) {
+    const modal = document.getElementById('modal-venta');
+    const titulo = document.getElementById('titulo-modal');
+    const contenido = document.getElementById('contenido-modal');
+
+    titulo.innerText = "Plan " + plan;
+    
+    // Añadimos un pequeño emoji o icono según el plan para que se vea más "pro"
+    let icono = "";
+    if (plan === 'Deportista') icono = "⚡";
+    else if (plan === 'Niños') icono = "🛡️";
+    else if (plan === 'Adulto Mayor') icono = "❤️";
+    else if (plan === 'Familiar') icono = "🏠";
+
+    let detalles = `<h2>${icono}</h2>`; // Esto pone el icono arriba
+
+    if (plan === 'Deportista') {
+        detalles += "<ul><li>Monitoreo de rendimiento</li><li>Monitoreo de pasos</li><li>Registro de intensidad</li></ul>";
+    } else if (plan === 'Niños') {
+        detalles += "<ul><li>Botón de llamada de emergencia</li><li>Mensajes directos con la familia</li><li>Nivel de batería en tiempo real</li></ul>";
+    } else if (plan === 'Adulto Mayor') {
+        detalles += "<ul><li>Detección de caídas</li><li>Monitoreo de salud constante</li><li>Alertas a cuidadores</li></ul>";
+    } else if (plan === 'Familiar') {
+        detalles += "<ul><li>Sincronización de todos los dispositivos</li><li>Control centralizado para el hogar</li><li>Protección grupal</li></ul>";
+    }
+
+    contenido.innerHTML = detalles;
+    modal.style.display = 'block';
 }
