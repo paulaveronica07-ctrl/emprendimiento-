@@ -101,3 +101,19 @@ header, main, footer {
 .plan-card.especial:hover {
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
 }
+.boton-comprar {
+    background: #00b4ff;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.boton-comprar:hover {
+    background: #ff00ff;
+    transform: scale(1.1);
+}
