@@ -99,3 +99,5 @@ function mostrarDetalle(plan) {
     contenido.innerHTML = detalles;
     modal.style.display = 'block';
 }
+// Cambia la línea de detalles por esta:
+let detalles = `<div class="icono-plan">${icono}</div>`;
