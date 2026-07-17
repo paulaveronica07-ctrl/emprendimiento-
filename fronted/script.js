@@ -1,18 +1,15 @@
+// 1. Lógica de las partículas de fondo (Three.js)
 const container = document.getElementById('canvas-container');
-
 const scene = new THREE.Scene();
-
-
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 5;
 
-const renderer = new THREE.WebGLRenderer({ alpha: true }); // alpha: true hace que el fondo sea transparente
+const renderer = new THREE.WebGLRenderer({ alpha: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 container.appendChild(renderer.domElement);
 
 const geometry = new THREE.BufferGeometry();
 const vertices = [];
-
 for (let i = 0; i < 5000; i++) {
     vertices.push((Math.random() - 0.5) * 10, (Math.random() - 0.5) * 10, (Math.random() - 0.5) * 10);
 }
@@ -29,20 +26,18 @@ scene.add(particles);
 
 function animate() {
     requestAnimationFrame(animate);
-    
     particles.rotation.y += 0.001;
     particles.rotation.x += 0.0005;
-    
     renderer.render(scene, camera);
 }
-
 window.addEventListener('resize', () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 });
+animate();
 
-animate(); 
+// 2. Lógica para mostrar las tarjetas al hacer clic (LO QUE ME ACABAS DE MANDAR)
 function mostrarDetalle(plan) {
     const modal = document.getElementById('modal-venta');
     const titulo = document.getElementById('titulo-modal');
@@ -67,4 +62,11 @@ function mostrarDetalle(plan) {
 
 function cerrarModal() {
     document.getElementById('modal-venta').style.display = 'none';
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById('modal-venta');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
 }
