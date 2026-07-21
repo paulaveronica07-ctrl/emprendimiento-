@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- Decisión técnica 1: Contenedor dedicado exclusivamente para el fondo interactivo en 3D con Three.js -->
     <div id="canvas-container"></div>
 
     <header>
@@ -20,6 +21,7 @@
     </header>
 
     <main>
+        <!-- Decisión técnica 2: Uso de la sección hero para captar la atención inicial del usuario con la propuesta de valor -->
         <section id="inicio">
             <h2>Tecnología que te conecta</h2>
             <p>App diseñada para atletas, adultos mayores y niños</p>
@@ -29,47 +31,48 @@
             <h2 class="titulo-futurista">Elige tu Experiencia BioSync</h2>
             <div class="planes-container">
                 
+                <!-- Decisión técnica 3: Uso de etiquetas article para encapsular cada producto/experiencia de forma independiente y semántica -->
                 <!-- Deportista -->
-<div class="plan-card" onclick="mostrarDetalle('Deportista')">
-    <img src="img/deportista.PNG" class="medusa-img" alt="Deportista">
-    <h3>Deportista</h3>
-    <p>Rendimiento al límite.</p>
-</div>
+                <article class="plan-card" onclick="mostrarDetalle('Deportista')">
+                    <img src="img/deportista.PNG" class="medusa-img" alt="Ilustración del modo deportista enfocado en rendimiento al límite">
+                    <h3>Deportista</h3>
+                    <p>Rendimiento al límite.</p>
+                </article>
 
-<!-- Adulto Mayor -->
-<div class="plan-card" onclick="mostrarDetalle('Adulto Mayor')">
-    <img src="img/adulto.PNG" class="medusa-img" alt="Adulto Mayor">
-    <h3>Adulto Mayor</h3>
-    <p>Seguridad y salud constante.</p>
-</div>
+                <!-- Adulto Mayor -->
+                <article class="plan-card" onclick="mostrarDetalle('Adulto Mayor')">
+                    <img src="img/adulto.PNG" class="medusa-img" alt="Ilustración del modo adulto mayor enfocado en seguridad y salud constante">
+                    <h3>Adulto Mayor</h3>
+                    <p>Seguridad y salud constante.</p>
+                </article>
 
-<!-- Niños -->
-<div class="plan-card" onclick="mostrarDetalle('Niños')">
-    <img src="img/peques.PNG" class="medusa-img" alt="Niños">
-    <h3>Niños</h3>
-    <p>Comunicación y protección.</p>
-</div>
+                <!-- Niños -->
+                <article class="plan-card" onclick="mostrarDetalle('Niños')">
+                    <img src="img/peques.PNG" class="medusa-img" alt="Ilustración del modo niños enfocado en comunicación y protección">
+                    <h3>Niños</h3>
+                    <p>Comunicación y protección.</p>
+                </article>
 
-<!-- Familiar -->
-<div class="plan-card especial" onclick="mostrarDetalle('Familiar')">
-    <img src="img/familiar.PNG" class="medusa-img" alt="Familiar">
-    <h3>Paquete Familiar</h3>
-    <p>Conexión total para tu hogar.</p>
-</div>
+                <!-- Familiar -->
+                <article class="plan-card especial" onclick="mostrarDetalle('Familiar')">
+                    <img src="img/familiar.PNG" class="medusa-img" alt="Ilustración del paquete familiar enfocado en conexión total para el hogar">
+                    <h3>Paquete Familiar</h3>
+                    <p>Conexión total para tu hogar.</p>
+                </article>
 
             </div>
         </section>
+    </main>
 
-        <!-- Ventana emergente (Modal) -->
-        <div id="modal-venta" class="modal">
-            <div class="modal-content">
-                <span class="cerrar" onclick="cerrarModal()">&times;</span>
-                <h2 id="titulo-modal"></h2>
-                <div id="contenido-modal"></div>
-                <button class="boton-comprar">Comprar Plan</button>
-            </div>
+    <!-- Ventana emergente (Modal) -->
+    <div id="modal-venta" class="modal">
+        <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2 id="titulo-modal"></h2>
+            <div id="contenido-modal"></div>
+            <button class="boton-comprar">Comprar Plan</button>
         </div>
-
+    </div>
 
     <footer>
         <p>&copy; 2026 BioSync - Paula, Miguel</p>
